@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>My Travel Site</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1>Welcome to my travel site</h1>
+      <p>This site is all about where I want to travel</p>
+    </div>
+    <h2>Here are some places I would like to visit</h2>
+    <ul>
+      <li>
+        <img src="assets/spain_flag.png" width="100">
+        <a href="http://www.spain.info/en_US/" target="_blank">Spain</a>
+      </li>
+      <li>
+        <img src="assets/italy_flag.png" width="100">
+        <a href="http://www.italia.it/en/home.html" target="_blank">Italy</a>
+      </li>
+      <li>
+        <img src="assets/aruba_flag.png" width="100">
+        <a href="http://www.arubatourism.com/" target="_blank">Aruba</a>
+      </li>
+      <li>
+        <img src="assets/us_flag.png" width="100">
+        <a href="https://www.travelalaska.com/" target="_blank">Alaska</a>
+      </li>
+    </ul>
+
+  <!-- Cols: Destination, Captial, Language -->
+    <table>
+      <tr>
+        <th>Destination</th>
+        <th>Capital</th>
+        <th>Official Language</th>
+      </tr>
+      <tr>
+        <td>Italy</td>
+        <td>Rome</td>
+        <td>Italian</td>
+      </tr>
+      <tr>
+        <td>Aruba</td>
+        <td>Oranjestad</td>
+        <td>Dutch</td>
+      </tr>
+      <tr>
+        <td>Alaska</td>
+        <td>Juneau</td>
+        <td>English</td>
+      </tr>
+    </table>
+
+    <fieldset>
+      <!-- Non nested allows for text first then input -->
+      <label for="country">Enter Country:</label>
+      <input type="text" name="country" id="country">
+      <!-- Nested allows input first then text -->
+      <label for="country">
+        <input type="radio" name="country">Spain
+        <input type="radio" name="country">Cuba
+      </label>
+    </fieldset>
+  </div>
+
+
+</body>
+</html>
