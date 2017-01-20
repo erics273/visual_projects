@@ -5,37 +5,48 @@
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/custom.css">
   <title>My Travel Site</title>
+  
+  <!--
+  @see http://getbootstrap.com/css/#overview-mobile
+  added so things scale properly when viewport is reduced
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <h1>Welcome to my travel site</h1>
-    </div>
-    <div class="col-md-12 text-center">
-      <p><em>This site is all about where I want to travel</em></p>
-    </div>
-  </div>
   
-  <div class="row">  
-    <div class="col-md-6">
-      <h4>Places I'd like to visit</h4>
-    </div>
+  <!-- 
+    moved this text out of the grid system (container div) and wrapped
+    in single div with class of text-center since you seem to have wanted 
+    this text centered
+  -->
+  <div class="text-center">
+    <h1>Welcome to my travel site</h1>
+    <p><em>This site is all about where I want to travel</em></p>
   </div>
 
-  <div class="row">
-    <div class="col-md-6">
-      <p><a href="http://www.spain.info/en_US/" target="_blank">Spain</a></p>
-          <img src="assets/spain_flag.png" width="300">
-    </div> 
-    <div class="col-md-6">       
-      <p><a href="http://www.italia.it/en/home.html" target="_blank">Italy</a></p>
-      <img src="assets/italy_flag.png" width="300">
-    </div>
-  </div>
+  <!--
+    starting the grid system. we centered the container on the page
+    in custom.css as well as set its width to controll spacing
+    
+    you really only need things in the cotainer you need to position
+    with the grid system
+  -->
+  <div class="container">
+  
+    <h4>Places I'd like to visit</h4>
 
-  <div class="row">
+    <div class="row">
+      <div class="col-md-6">
+        <p><a href="http://www.spain.info/en_US/" target="_blank">Spain</a></p>
+        <img src="assets/spain_flag.png" width="300">
+      </div> 
+      <div class="col-md-6">       
+        <p><a href="http://www.italia.it/en/home.html" target="_blank">Italy</a></p>
+        <img src="assets/italy_flag.png" width="300">
+      </div>
+    </div>
+
+    <div class="row">
       <div class="col-md-6">
       <p><a href="http://www.arubatourism.com/" target="_blank">Aruba</a></p>
         <img src="assets/aruba_flag.png" width="300">
@@ -44,42 +55,41 @@
         <p><a href="https://www.travelalaska.com/" target="_blank">Alaska</a></p>
         <img src="assets/us_flag.png" width="300" height="200">
       </div>
+    </div>
+  
   </div>
   
-  <div class="row">
-    <div class="col-md-12">
-      <table class="table table-hover">
-        <caption>Country Information</caption>
-        <tr>
-          <th>Destination</th>
-          <th>Capital</th>
-          <th>Official Language</th>
-        </tr>
-        <tr>
-          <td>Spain</td>
-          <td>Madrid</td>
-          <td>Spanish</td>
-        </tr>
-        <tr>
-          <td>Italy</td>
-          <td>Rome</td>
-          <td>Italian</td>
-        </tr>
-        <tr>
-          <td>Aruba</td>
-          <td>Oranjestad</td>
-          <td>Dutch</td>
-        </tr>
-        <tr>
-          <td>Alaska</td>
-          <td>Juneau</td>
-          <td>English</td>
-        </tr>
-      </div>
-    </table>
-  </div>
-</div>
-
+  <!--
+    table is outside of the container since your not trying to position it. 
+  -->
+  <table class="table table-hover">
+    <caption>Country Information</caption>
+    <tr>
+      <th>Destination</th>
+      <th>Capital</th>
+      <th>Official Language</th>
+    </tr>
+    <tr>
+      <td>Spain</td>
+      <td>Madrid</td>
+      <td>Spanish</td>
+    </tr>
+    <tr>
+      <td>Italy</td>
+      <td>Rome</td>
+      <td>Italian</td>
+    </tr>
+    <tr>
+      <td>Aruba</td>
+      <td>Oranjestad</td>
+      <td>Dutch</td>
+    </tr>
+    <tr>
+      <td>Alaska</td>
+      <td>Juneau</td>
+      <td>English</td>
+    </tr>
+  </table>
 
 </body>
 </html>

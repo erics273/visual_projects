@@ -1,35 +1,9 @@
-/** {
-   border: 1px solid red !important;
-}*/
-
-img {
-  margin: 40px;
-  margin-bottom: 20px;
-  margin-left: 80px;
-}
-
-table {
-  margin-top: 40px;
-  text-align: center;
-}
-
-th {
-  text-align: center;
-}
-
-td {
-  padding: 10px;
-}
-
-.col-md-12 p {
-  margin-top: -5px;
-  margin-bottom: 20px;
-}
-
-.col-md-6 p {
-  margin-top: 10px;
-  margin-bottom: -20px;
-  margin-left: 40px;
-  margin-left: 80px;
-
+/* 
+  container for grid system that positions flags  
+  max-width: 700px is controlling how close the flags are to eachother
+  margin: 0 auto is centering the container on the page.
+*/
+.container{
+  max-width: 700px;
+  margin: 0 auto; 
 }
